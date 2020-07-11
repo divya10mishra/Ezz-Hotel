@@ -1,0 +1,56 @@
+{
+  "name": "ezzhotels",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/pickers": "^3.2.10",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "date-fns": "^2.0.0-beta.5",
+    "material-auto-rotating-carousel": "^3.0.2",
+    "material-ui-image": "^3.2.3",
+    "moment": "^2.27.0",
+    "picker-react": "^1.1.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^0.32.1",
+    "react-date-range": "^1.0.3",
+    "react-dates": "^21.8.0",
+    "react-dom": "^16.13.1",
+    "react-notifications": "^1.6.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
+    "react-slick": "^0.26.1",
+    "react-slideshow-image": "^1.5.3",
+    "react-swipeable-views": "^0.13.9",
+    "rsuite": "^4.7.5",
+    "rsuite-daterangepicker": "^3.0.5",
+    "rsuite-utils": "^2.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
