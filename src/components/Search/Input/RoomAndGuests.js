@@ -30,7 +30,7 @@ class RoomAndGuests extends React.Component{
    }
 
    render(){
-     debugger;
+    //  debugger;
       const {isOpen, roomNumber, guestNumber}  = this.state;
       const isDisplay = isOpen? <SimpleZoom isOpen={isOpen} updateRoom={this.updateRoom} updateGuest={this.updateGuest}/>: null;
       return (

@@ -26,16 +26,16 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px",
   },
 }));
-export default function CityList() {
+function CityList() {
   const classes = useStyles();
   return (
-    <div class="menu-item col-lg-9 p-0">
+    <div class="menu-item">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="nav-menu text-center">
                                                 <nav class="mainmenu">
-                                                    <ul>
+                                                    <ul id="desktopCity">
                                                         <li class=""><a href="./index.html">Delhi</a>
                                                             <ul class="dropdown">
                                                                 <li><a href="#">Mahipalpur</a></li>
@@ -174,3 +174,4 @@ export default function CityList() {
                             </div>
   );
 }
+export default CityList;

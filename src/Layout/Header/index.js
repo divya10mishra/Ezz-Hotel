@@ -62,14 +62,14 @@ const Header = (props) => {
   }
   else {
     cityUL = <CityUL />
-
+    cityList=<CityList/>
     signInHeader = <div style={{ display: "flex", marginTop: "20px" }}>
       <PersonIcon onClick={handleClick} style={{ marginTop: "2px" }} />
       <p
         onClick={handleClick}
-        className="login-sign-para"
+        className="login-sign-para" 
       >Sign In</p> |
-                          <PersonIcon />
+                          <PersonIcon className="SignUpPerson"/>
       <p className="login-sign-para">Sign Up</p>
     </div>
 
@@ -79,12 +79,12 @@ const Header = (props) => {
     <>
       <div className="container">
         <AppBar position="fixed">
-          <div className="row">
+          <div className="row" id="myHeader">
             <Toolbar>
-              <div className="col-sm-1">
+              <div className="col-sm-2">
                 <IconButton
                   edge="start"
-                  className={classes.menuButton}
+                  className="menuButton"
                   color="inherit"
                   aria-label="menu"
                   onClick={openDrawer}
@@ -92,19 +92,20 @@ const Header = (props) => {
                   <MenuIcon />
                 </IconButton>
               </div>
-              <div className="col-sm-2">
-                <Typography variant="h5" className={classes.title}
-
-                >
-                  {home.appName}
-                </Typography>
+              <div className="col-sm-3">
+                <a href="#" className="logo-btn">
+                <span>EZZ |</span><br></br><span>Hotel</span> 
+                </a>
               </div>
 
-              <div className="col-sm-7">
-                {cityUL}
+              <div className="col-sm-5">
+                <span id="DesktopCityView">{cityUL}</span>
+                <span id="MobileCityView">
+                  {cityList}
+                </span>
               </div>
               <div className="col-sm-2">
-                <IconButton color="inherit" >
+                <IconButton color="inherit" className="loginSignUpContainer">
 
                   {myProfile}
 
