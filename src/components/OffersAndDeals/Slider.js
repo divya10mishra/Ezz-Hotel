@@ -9,7 +9,8 @@ const properties = {
   transitionDuration: 500,
   infinite: true,
   indicators: true,
-  arrows: true,
+  align: "center",
+  arrows: false,
   pauseOnHover: true,
   onChange: (oldIndex, newIndex) => {
     console.log(`slide transition from ${oldIndex} to ${newIndex}`);

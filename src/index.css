@@ -16,9 +16,9 @@
         flex-direction : column; 
     }
     .booking-responsive{
-       
         flex-direction: column;
     }
+    
 }
 
 .w3-modal-content {
@@ -317,12 +317,14 @@ input[type="date"].full:before {
 }
 .slide-container{
     margin: auto;
-    height: 50%;
-    width: 60%;
+    height: auto;
+    width: auto;
     padding: 10px;
+   
 }
 .slideImage{
     height:auto;
+    width:100%;
 }
 .room-guest-box{
     position: absolute;
