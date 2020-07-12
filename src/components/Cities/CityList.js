@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexFlow: "row nowrap",
     margin: "0 auto",
-    height: "90px",
+    // height: "90px",
     marginLeft:"10px"
   },
   location: {
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 export default function CityList() {
   const classes = useStyles();
   return (
-    <section style={{ paddingTop: "80px"}}>
+    <section style={{ paddingTop: "20px"}}>
       <div className={classes.cityList}>
         <a className="c-nn640c" href="/">
           <div className="c-13rzt5g">

@@ -1,3 +1,5 @@
+/* Start */
+
 .res-travel-guide{
     display : flex;
     flex-direction : row;
@@ -11,14 +13,14 @@
 /* .booking-button{
     height:50px;
 } */
+
 @media only screen and (max-width:768px) {
     .res-travel-guide{
         flex-direction : column; 
     }
     .booking-responsive{
         flex-direction: column;
-    }
-    
+    } 
 }
 
 .w3-modal-content {
@@ -66,7 +68,9 @@
 }
 
 
-
+#headerRow{
+    width:100%
+}
 
 @media only screen and (max-width: 700px) {
     .menuButton {
@@ -87,16 +91,27 @@
     }
     #myHeader{
         padding:5px 0px 5px!important;
-        margin-top: -50px;
-        margin-bottom: -25px;
+    }
+    #headerRow{
+        flex-direction: column;
+    }
+    #customsignInHeader{
+        display:none
+    }
+    #customCityCSS{
+        overflow-x: auto;
+        width:100%
     }
   }
+
 
 
   
   #myHeader{
       padding: 25px 0px 25px;
   }
+
+  /* End */
 
 .logo-btn {
     display: inline-block;

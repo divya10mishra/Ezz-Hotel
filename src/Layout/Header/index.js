@@ -80,25 +80,25 @@ const Header = (props) => {
       <div className="container">
         <AppBar position="fixed">
           <div className="row" id="myHeader">
-            <Toolbar>
-              <div className="col-sm-2">
+            <Toolbar id="headerRow">
+              <div className="col-sm-5">
+                <a href="#" className="logo-btn">
+                <span>EZZ | Hotel</span> 
+                </a>
+             
                 <IconButton
                   edge="start"
                   className="menuButton"
                   color="inherit"
                   aria-label="menu"
+                  style={{float:'right',marginTop:'15px',marginRight:'-70px'}}
                   onClick={openDrawer}
                 >
                   <MenuIcon />
                 </IconButton>
               </div>
-              <div className="col-sm-3">
-                <a href="#" className="logo-btn">
-                <span>EZZ |</span><br></br><span>Hotel</span> 
-                </a>
-              </div>
 
-              <div className="col-sm-5">
+              <div className="col-sm-5" id="customCityCSS">
                 <span id="DesktopCityView">{cityUL}</span>
                 <span id="MobileCityView">
                   {cityList}
@@ -106,10 +106,15 @@ const Header = (props) => {
               </div>
               <div className="col-sm-2">
                 <IconButton color="inherit" className="loginSignUpContainer">
-
+                  <span>
                   {myProfile}
-
+                  </span>
+                  <span id="customsignInHeader">
                   {signInHeader}
+                  </span>
+                                  
+
+               
 
                 </IconButton>
               </div>
