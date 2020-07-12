@@ -48,7 +48,7 @@
 
 
 #desktopCity{
-    margin-left: 150px!important;
+    margin-left: 70px!important;
     margin-right: 70px!important;
 }
 #desktopCity > ul > li{
@@ -104,9 +104,6 @@
     }
   }
 
-
-
-  
   #myHeader{
       padding: 25px 0px 25px;
   }
