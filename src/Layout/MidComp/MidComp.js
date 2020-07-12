@@ -27,7 +27,8 @@ export default function MidComp() {
     <div>
         <div style={{background:"#f8f9fa!important"}}>
          <div className="container" >
-            <div style={{display:'flex'}}>
+             {/* style={{display:'flex'}} */}
+            <div className = "res-travel-guide" >
                 <Card className={classes.root}>
                     <CardActionArea>
                     <CardMedia
