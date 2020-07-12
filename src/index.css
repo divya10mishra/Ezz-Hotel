@@ -25,6 +25,86 @@
     border-radius: 14px;
 }
 
+.login-sign-para{
+    padding-left: 4px;
+    padding-right: 14px;
+}
+
+.SignUpPerson{
+    margin-left: 14px;
+}
+
+#loginSignUpContainer{
+    padding:8px;
+}
+
+
+#desktopCity{
+    margin-left: 150px!important;
+    margin-right: 70px!important;
+}
+#desktopCity > ul > li{
+   font-size: 15px!important;
+}
+
+.menuButton{
+    display:none
+}
+
+#MobileCityView{
+    display: none;
+}
+
+.makeStyles-searchBox-11{
+    margin-top: 170px!important;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .menuButton {
+      display:block;
+      padding-left: 20px;
+    }
+    .logo-btn {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+    #DesktopCityView{
+        display:none;
+    }
+    #MobileCityView{
+        display:inline;
+        overflow-x: auto;
+        min-width: 200px;
+    }
+    #myHeader{
+        padding:5px 0px 5px!important;
+        margin-top: -50px;
+        margin-bottom: -25px;
+    }
+  }
+
+
+  
+  #myHeader{
+      padding: 25px 0px 25px;
+  }
+
+.logo-btn {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 900;
+    padding-top: 10px;
+    margin-left: 30px;
+    line-break: normal;
+    /* color: #daa520; */
+    color: #daa520;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 .login-container {
     width: 390px;
     background: #fff;
@@ -257,7 +337,7 @@ input[type="date"].full:before {
     transform: translate3d(0px, 50px, 0px);
 }
 .makeStyles-container-11{display: block;
-    position: absolute;
+    /* position: absolute; */
     top: 13%;
     /* left: 0; */
     border-radius: 4px;
