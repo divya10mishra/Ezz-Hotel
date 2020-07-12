@@ -36,12 +36,13 @@ class RoomAndGuests extends React.Component{
       return (
         <Grid
           container
+          display="flex"
           alignItems="center"
           direction="row"
           justify="flex-start"
           wrap="nowrap"
           style={{
-            width: "100%",
+            width: "auto",
             height: "50px",
             border: "1px solid #ebebeb",
             borderRadius: "2px",

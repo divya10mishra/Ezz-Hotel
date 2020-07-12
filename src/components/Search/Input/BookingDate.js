@@ -33,16 +33,18 @@ class BookingDate extends React.Component{
               justify="flex-start"
               wrap="nowrap"
               style={{
-                width: "100%",
-                height: "50px",
+                width: "auto",
+                Height: "auto",
                 borderRadius: "2px",
+                border: "1px solid #ebebeb",
               }}
             >
+              
               <Grid item>
                  <IconButton aria-label="Booking Location" size="small">
                       <CalendarTodayOutlinedIcon color="secondary" fontSize="small" />
                  </IconButton>
-              </Grid>
+              </Grid>              
               <DateRangePicker 
                    startDate={this.state.startDate} // momentPropTypes.momentObj or null,
                    endDate={this.state.endDate} // momentPropTypes.momentObj or null,

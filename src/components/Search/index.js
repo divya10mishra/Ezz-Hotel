@@ -27,8 +27,8 @@ export default function Search() {
   const classes = useStyle();
   return (
     <section>
-      <Paper className={classes.searchBox} elevation={3} >
-        <Grid container spacing={3}>
+      <Paper className={classes.searchBox}  >
+        {/* <Grid container spacing={3}>
           <Grid item xs={6} md={3} style={{border:"none"}}>
             <BookingLocation />
           </Grid>
@@ -41,7 +41,21 @@ export default function Search() {
           <Grid item xs={1} md={2}>
             <Button style={{height:"50px"}} className={classes.searhButton}>Check</Button>
           </Grid>
-        </Grid>
+        </Grid> */}
+        <div className="row booking-responsive">
+          <div classname="col-3">
+          <BookingLocation />
+          </div>
+          <div classname="col-3">
+          <BookingDate />
+          </div>
+          <div classname="col-3">
+          <RoomAndGuests />
+          </div>
+          <div classname="col-3">
+          <Button style={{height:"50px"}} className={classes.searhButton}>Check</Button>
+          </div>
+          </div>
       </Paper>
     </section>
   );

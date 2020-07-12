@@ -2,17 +2,23 @@
     display : flex;
     flex-direction : row;
 }
+.booking-responsive{
+    
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* .booking-button{
+    height:50px;
+} */
 @media only screen and (max-width:768px) {
     .res-travel-guide{
         flex-direction : column; 
     }
-    slide-container{
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    border:1px solid blue
-    /* padding: 10px; */
-}
+    .booking-responsive{
+       
+        flex-direction: column;
+    }
 }
 
 .w3-modal-content {
@@ -250,6 +256,7 @@ input::-webkit-input-placeholder {
     margin-left: 20px;
 }
 .makeStyles-searhButton-4 {
+    height:50px;
     width: 90%;
     background-color: #75e14d;
 }

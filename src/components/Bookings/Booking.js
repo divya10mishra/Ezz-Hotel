@@ -63,6 +63,7 @@ render(){
 
                                          return(<Grid item xs={12} sm={10}>
                                                         <Paper >
+                                                          
                                                             <div style={{marginLeft:"10px",marginTop: "30px", padding:'5px'}}>
                                                                 <div >
                                                                     <Grid item xs={6} sm={4} >
@@ -95,6 +96,7 @@ render(){
                                                                     
                                                                 </div>
                                                             </div>
+                                                      
                                                         </Paper>
                                                     </Grid>
                                                 )}): '';

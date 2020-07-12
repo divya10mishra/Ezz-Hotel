@@ -53,9 +53,10 @@ class BookingLocation extends React.Component {
             justify="flex-start"
             wrap="nowrap"
             style={{
-              width: "100%",
-              height: "50px",
-              borderRadius: "2px",
+              width: "auto",
+              height: "auto",
+              border: "1px solid #ebebeb",
+              
             }}
           >
       <Grid item>
