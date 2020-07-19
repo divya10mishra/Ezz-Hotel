@@ -28,34 +28,20 @@ export default function Search() {
   return (
     <section>
       <Paper className={classes.searchBox}  >
-        {/* <Grid container spacing={3}>
-          <Grid item xs={6} md={3} style={{border:"none"}}>
+         <Grid container spacing={2}>
+          <Grid item xs={12} md={3} style={{border:"none"}}>
             <BookingLocation />
           </Grid>
-          <Grid item xs={6} md={4} style={{border:"none"}}>
+          <Grid item xs={12} md={4} style={{border:"none"}}>
             <BookingDate />
           </Grid>
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <RoomAndGuests />
           </Grid>
-          <Grid item xs={1} md={2}>
+          <Grid item xs={12} md={2}>
             <Button style={{height:"50px"}} className={classes.searhButton}>Check</Button>
           </Grid>
-        </Grid> */}
-        <div className="row booking-responsive">
-          <div classname="col-3">
-          <BookingLocation />
-          </div>
-          <div classname="col-3">
-          <BookingDate />
-          </div>
-          <div classname="col-3">
-          <RoomAndGuests />
-          </div>
-          <div classname="col-3">
-          <Button style={{height:"50px"}} className={classes.searhButton}>Check</Button>
-          </div>
-          </div>
+        </Grid> 
       </Paper>
     </section>
   );

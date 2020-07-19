@@ -26,9 +26,7 @@ export default function MidComp() {
     return (
     <div>
         <div style={{background:"#f8f9fa!important"}}>
-         <div className="container" >
-             {/* style={{display:'flex'}} */}
-            <div className = "res-travel-guide" >
+         <div className="container res-travel-guide" >
                 <Card className={classes.root}>
                     <CardActionArea>
                     <CardMedia
@@ -93,7 +91,7 @@ export default function MidComp() {
             </div>
                
          </div>
-        </div>
+        
          <div className="fluid-container" style={{marginTop:"50px"}}>
                    <img src={chain} />
                 </div>
