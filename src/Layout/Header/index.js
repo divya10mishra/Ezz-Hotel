@@ -79,10 +79,10 @@ const Header = (props) => {
   return (
     <>
       <Grid container>
-        <AppBar position="fixed">
-          <Grid> {/* id="myHeader" */}
+        <AppBar position="fixed" className="m-3">
+          <Grid > {/* id="myHeader" */}
             <Toolbar className="row">   {/* id="headerRow" */}
-              <Grid item xs={12} sm={2}>
+              <Grid item xs={12} sm={3}>
 
                 <a href="#" className="logo-btn">
                 <span>EZZ | Hotel</span> 
@@ -100,9 +100,9 @@ const Header = (props) => {
                 </IconButton>
               </Grid>
 
-              <Grid item sm={8} xs={12} justify="center">
-                <span id="DesktopCityView">{cityUL}</span>
-                <span id="MobileCityView">
+              <Grid item sm={7} xs={12} justify="center">
+                <span id="DesktopCityView" >{cityUL}</span>
+                <span id="MobileCityView" >
                   {cityList}
                 </span>
               </Grid>
