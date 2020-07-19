@@ -106,6 +106,7 @@ const Header = (props) => {
                   {cityList}
                 </span>
               </Grid>
+              {/* <Hidden xsDown> */}
               <Grid item sm={2} xs={12}>
            <IconButton color="inherit">      {/* className="loginSignUpContainer" */}
                   <span>
@@ -116,6 +117,7 @@ const Header = (props) => {
                   </span>
                 </IconButton>
               </Grid>
+              {/* </Hidden> */}
             </Toolbar>
           </Grid>
 
