@@ -10,6 +10,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import PersonIcon from '@material-ui/icons/Person';
 import { home } from "../../shared/app-constants";
 import MyProfileOption from '../../components/LoginAndRegistration/MyProfileOptions'
+import { Grid, Paper, Button } from "@material-ui/core";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -77,11 +78,12 @@ const Header = (props) => {
 
   return (
     <>
-      <div className="container">
+      <Grid container>
         <AppBar position="fixed">
-          <div className="row" id="myHeader">
-            <Toolbar id="headerRow">
-              <div className="col-sm-5">
+          <Grid> {/* id="myHeader" */}
+            <Toolbar className="row">   {/* id="headerRow" */}
+              <Grid item xs={12} sm={2}>
+
                 <a href="#" className="logo-btn">
                 <span>EZZ | Hotel</span> 
                 </a>
@@ -91,38 +93,34 @@ const Header = (props) => {
                   className="menuButton"
                   color="inherit"
                   aria-label="menu"
-                  style={{float:'right',marginTop:'15px',marginRight:'-70px'}}
+                  // style={{float:'right',marginTop:'15px',marginRight:'-70px'}}
                   onClick={openDrawer}
                 >
                   <MenuIcon />
                 </IconButton>
-              </div>
+              </Grid>
 
-              <div className="col-sm-5" id="customCityCSS">
+              <Grid item sm={8} xs={12} justify="center">
                 <span id="DesktopCityView">{cityUL}</span>
                 <span id="MobileCityView">
                   {cityList}
                 </span>
-              </div>
-              <div className="col-sm-2">
-                <IconButton color="inherit" className="loginSignUpContainer">
+              </Grid>
+              <Grid item sm={2} xs={12}>
+           <IconButton color="inherit">      {/* className="loginSignUpContainer" */}
                   <span>
                   {myProfile}
                   </span>
-                  <span id="customsignInHeader">
+                <span>     {/* id="customsignInHeader" */}
                   {signInHeader}
                   </span>
-                                  
-
-               
-
                 </IconButton>
-              </div>
+              </Grid>
             </Toolbar>
-          </div>
+          </Grid>
 
         </AppBar>
-      </div>
+      </Grid>
 
 
     </>
