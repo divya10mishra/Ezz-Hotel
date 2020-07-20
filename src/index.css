@@ -26,19 +26,7 @@
     padding-right: 14px;
 }
 
-/* .SignUpPerson{ */
-    /* margin-left: 14px;
-}
 
-#loginSignUpContainer{
-    padding:8px;
-} */
-
-/* 
-#desktopCity{
-    margin-left: 70px!important;
-    margin-right: 70px!important;
-} */
 #desktopCity > ul > li{
    font-size: 15px!important;
 }
@@ -50,25 +38,16 @@
 #MobileCityView{
     display: none;
 }
-
-/* .makeStyles-searchBox-11{
-    margin-top: 170px!important;
-} */
-
-
-/* #headerRow{
-    width:100%
-} */
-
+.sign-area-mobile{
+    display: flex;
+    marginTop: 20px;
+}
 @media only screen and (max-width: 700px) {
      .menuButton {
        display:inline-block; 
        padding-left: 20px;
     } 
-    /* .logo-btn {
-        margin-left: 0px !important;
-        padding-left: 0px !important;
-    } */
+    
     #DesktopCityView{
         display:none;
     }
@@ -77,12 +56,7 @@
         overflow-x: auto;
         min-width: 200px;
     }
-    /* #myHeader{
-        padding:5px 0px 5px!important;
-    } */
-    /* #headerRow{
-        flex-direction: column;
-    } */
+   
     #customsignInHeader{
         display:none
     }
@@ -90,11 +64,13 @@
         overflow-x: auto;
         width:100%
     }
+    .sign-area-mobile{
+        display: none;
+    }
+    
   }
 
-  /* #myHeader{
-      padding: 25px 0px 25px;
-  } */
+ 
 
   /* End */
 

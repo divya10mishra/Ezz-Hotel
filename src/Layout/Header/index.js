@@ -64,7 +64,8 @@ const Header = (props) => {
   else {
     cityUL = <CityUL />
     cityList=<CityList/>
-    signInHeader = <div style={{ display: "flex", marginTop: "20px" }}>
+    signInHeader = <div className="sign-area-mobile"> 
+    {/* style={{ display: "flex", marginTop: "20px" }} */}
       <PersonIcon onClick={handleClick} style={{ marginTop: "2px" }} />
       <p
         onClick={handleClick}

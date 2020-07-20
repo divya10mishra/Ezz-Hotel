@@ -5,11 +5,11 @@ import { makeStyles, IconButton } from "@material-ui/core";
 import MyLocationIcon from "@material-ui/icons/MyLocation";
  const cities=[
     {'hCity': "Delhi"},
-{'hCity': "goa"},
-{'hCity': "manali"},
-{'hCity': "jodhpur"},
-{'hCity': "mumbai"},
-{'hCity': "chennai"}
+{'hCity': "Goa"},
+{'hCity': "Manali"},
+{'hCity': "Jodhpur"},
+{'hCity': "Mumbai"},
+{'hCity': "Chennai"}
 ];
 
 const useStyles = makeStyles((theme) => ({
