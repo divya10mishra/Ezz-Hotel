@@ -77,7 +77,7 @@ const Header = (props) => {
       <Grid container>
         <AppBar position="fixed" className="m-3">
           <Grid >
-            <Toolbar className="row">  
+            <Toolbar className="row">
               <Grid item xs={12} sm={3}>
                 <a href="#" className="logo-btn">
                   <span>EZZ | Hotel</span>
@@ -101,11 +101,11 @@ const Header = (props) => {
               </Grid>
               {/* <Hidden xsDown> */}
               <Grid item sm={2} xs={12}>
-                <IconButton color="inherit">     
+                <IconButton color="inherit">
                   <span>
                     {myProfile}
                   </span>
-                  <span>    
+                  <span>
                     {signInHeader}
                   </span>
                 </IconButton>
