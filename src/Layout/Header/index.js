@@ -15,18 +15,15 @@ import { Grid, Paper, Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // flexGrow: 1,
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
   title: {
-    // flexGrow: 1,
   },
 }));
 
 const Header = (props) => {
-  //  debugger;
   let myProfile = '';
   let signInHeader = '';
   let cityUL = '';
@@ -63,38 +60,33 @@ const Header = (props) => {
   }
   else {
     cityUL = <CityUL />
-    cityList=<CityList/>
-    signInHeader = <div className="sign-area-mobile"> 
-    {/* style={{ display: "flex", marginTop: "20px" }} */}
+    cityList = <CityList />
+    signInHeader = <div className="sign-area-mobile">
       <PersonIcon onClick={handleClick} style={{ marginTop: "2px" }} />
       <p
         onClick={handleClick}
-        className="login-sign-para" 
+        className="login-sign-para"
       >Sign In</p> |
-                          <PersonIcon className="SignUpPerson"/>
+      <PersonIcon className="SignUpPerson" />
       <p className="login-sign-para">Sign Up</p>
     </div>
-
   }
 
   return (
     <>
       <Grid container>
         <AppBar position="fixed" className="m-3">
-          <Grid > {/* id="myHeader" */}
-            <Toolbar className="row">   {/* id="headerRow" */}
+          <Grid >
+            <Toolbar className="row">  
               <Grid item xs={12} sm={3}>
-
                 <a href="#" className="logo-btn">
-                <span>EZZ | Hotel</span> 
+                  <span>EZZ | Hotel</span>
                 </a>
-             
                 <IconButton
                   edge="start"
                   className="menuButton"
                   color="inherit"
                   aria-label="menu"
-                  // style={{float:'right',marginTop:'15px',marginRight:'-70px'}}
                   onClick={openDrawer}
                 >
                   <MenuIcon />
@@ -109,23 +101,20 @@ const Header = (props) => {
               </Grid>
               {/* <Hidden xsDown> */}
               <Grid item sm={2} xs={12}>
-           <IconButton color="inherit">      {/* className="loginSignUpContainer" */}
+                <IconButton color="inherit">     
                   <span>
-                  {myProfile}
+                    {myProfile}
                   </span>
-                <span>     {/* id="customsignInHeader" */}
-                  {signInHeader}
+                  <span>    
+                    {signInHeader}
                   </span>
                 </IconButton>
               </Grid>
               {/* </Hidden> */}
             </Toolbar>
           </Grid>
-
         </AppBar>
       </Grid>
-
-
     </>
   );
 };
