@@ -26,90 +26,10 @@
     padding-right: 14px;
 }
 
-/* .SignUpPerson{ */
-    /* margin-left: 14px;
-}
-
-#loginSignUpContainer{
-    padding:8px;
-} */
-
-/* 
-#desktopCity{
-    margin-left: 70px!important;
-    margin-right: 70px!important;
-} */
 #desktopCity > ul > li{
    font-size: 15px!important;
 }
 
-.menuButton{
-    display:none
-}
-
-#MobileCityView{
-    display: none;
-}
-
-/* .makeStyles-searchBox-11{
-    margin-top: 170px!important;
-} */
-
-
-/* #headerRow{
-    width:100%
-} */
-
-@media only screen and (max-width: 700px) {
-     .menuButton {
-       display:inline-block; 
-       padding-left: 20px;
-    } 
-    /* .logo-btn {
-        margin-left: 0px !important;
-        padding-left: 0px !important;
-    } */
-    #DesktopCityView{
-        display:none;
-    }
-    #MobileCityView{
-        display:inline;
-        overflow-x: auto;
-        min-width: 200px;
-    }
-    /* #myHeader{
-        padding:5px 0px 5px!important;
-    } */
-    /* #headerRow{
-        flex-direction: column;
-    } */
-    #customsignInHeader{
-        display:none
-    }
-    #customCityCSS{
-        overflow-x: auto;
-        width:100%
-    }
-  }
-
-  /* #myHeader{
-      padding: 25px 0px 25px;
-  } */
-
-  /* End */
-
-/* .logo-btn {
-    display: inline-block;
-    font-size: 22px;
-    font-weight: 900;
-    padding-top: 10px;
-    margin-left: 30px;
-    line-break: normal;
-    /* color: #daa520; */
-    /* color: #daa520;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-} */ */
 
 .login-container {
     width: 390px;

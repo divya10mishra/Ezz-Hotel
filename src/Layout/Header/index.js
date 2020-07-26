@@ -14,15 +14,39 @@ import { Grid, Paper, Button } from "@material-ui/core";
 
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    // flexGrow: 1,
-  },
   menuButton: {
-    marginRight: theme.spacing(2),
+    display: 'none',
+    [theme.breakpoints.down('sm')]:{
+      display:'inline-block',
+      paddingLeft:' 20px',
+    }
   },
-  title: {
-    // flexGrow: 1,
+  DesktopCityView:{
+    [theme.breakpoints.down('sm')]:{
+      display:'none'
+    }
   },
+  MobileCityView:{
+    display: 'none',
+    [theme.breakpoints.down('sm')]:{
+      display:"inline",
+      overflowX: "auto",
+      minWidth:" 200px"
+    }
+  },
+  myHeader:{
+    padding:'20px 0px 20px 0px',
+    [theme.breakpoints.down('sm')]:{
+      padding:'5px 0px 5px 0px',
+    }
+  },
+  signInHeaderStyle:{
+    display: "flex", 
+    marginTop: "20px",
+    [theme.breakpoints.down('sm')]:{
+      display: "none"
+    }
+  }
 }));
 
 const Header = (props) => {
@@ -64,13 +88,13 @@ const Header = (props) => {
   else {
     cityUL = <CityUL />
     cityList=<CityList/>
-    signInHeader = <div style={{ display: "flex", marginTop: "20px" }}>
+    signInHeader = <div className={classes.signInHeaderStyle}>
       <PersonIcon onClick={handleClick} style={{ marginTop: "2px" }} />
       <p
         onClick={handleClick}
         className="login-sign-para" 
       >Sign In</p> |
-                          <PersonIcon className="SignUpPerson"/>
+       <PersonIcon className="SignUpPerson"/>
       <p className="login-sign-para">Sign Up</p>
     </div>
 
@@ -80,20 +104,17 @@ const Header = (props) => {
     <>
       <Grid container>
         <AppBar position="fixed" className="m-3">
-          <Grid > {/* id="myHeader" */}
-            <Toolbar className="row">   {/* id="headerRow" */}
+          <Grid   className={classes.myHeader} >
+            <Toolbar className="row">  
               <Grid item xs={12} sm={3}>
-
                 <a href="#" className="logo-btn">
-                <span>EZZ | Hotel</span> 
+                <span className={classes.localContainer}>EZZ | Hotel</span>
                 </a>
-             
                 <IconButton
                   edge="start"
-                  className="menuButton"
+                  className={classes.menuButton}
                   color="inherit"
                   aria-label="menu"
-                  // style={{float:'right',marginTop:'15px',marginRight:'-70px'}}
                   onClick={openDrawer}
                 >
                   <MenuIcon />
@@ -101,18 +122,18 @@ const Header = (props) => {
               </Grid>
 
               <Grid item sm={7} xs={12} justify="center">
-                <span id="DesktopCityView" >{cityUL}</span>
-                <span id="MobileCityView" >
+                <span className={classes.DesktopCityView} >{cityUL}</span>
+                <span className={classes.MobileCityView} >
                   {cityList}
                 </span>
               </Grid>
               {/* <Hidden xsDown> */}
               <Grid item sm={2} xs={12}>
-           <IconButton color="inherit">      {/* className="loginSignUpContainer" */}
+           <IconButton color="inherit">     
                   <span>
                   {myProfile}
                   </span>
-                <span>     {/* id="customsignInHeader" */}
+                <span>    
                   {signInHeader}
                   </span>
                 </IconButton>
@@ -120,11 +141,8 @@ const Header = (props) => {
               {/* </Hidden> */}
             </Toolbar>
           </Grid>
-
         </AppBar>
       </Grid>
-
-
     </>
   );
 };

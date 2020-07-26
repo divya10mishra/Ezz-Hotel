@@ -15,8 +15,9 @@ const useStyle = makeStyles(theme=>{
       searchBox:{
         margin: "5px",
         padding: "15px",
-        [theme.breakpoints.up('md')]: {
-          marginTop: "55px",
+        marginTop: "110px",
+        [theme.breakpoints.down('sm')]: {
+          marginTop: "185px",
         },
       }
 
