@@ -14,6 +14,11 @@ import { Grid, Paper, Button } from "@material-ui/core";
 
 
 const useStyles = makeStyles((theme) => ({
+<<<<<<< HEAD
+=======
+  root: {
+  },
+>>>>>>> 2878e9a8f359b6444a2f26e79394a8e0b1982032
   menuButton: {
     display: 'none',
     [theme.breakpoints.down('sm')]:{
@@ -26,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
       display:'none'
     }
   },
+<<<<<<< HEAD
   MobileCityView:{
     display: 'none',
     [theme.breakpoints.down('sm')]:{
@@ -33,6 +39,9 @@ const useStyles = makeStyles((theme) => ({
       overflowX: "auto",
       minWidth:" 200px"
     }
+=======
+  title: {
+>>>>>>> 2878e9a8f359b6444a2f26e79394a8e0b1982032
   },
   myHeader:{
     padding:'20px 0px 20px 0px',
@@ -50,7 +59,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header = (props) => {
-  //  debugger;
   let myProfile = '';
   let signInHeader = '';
   let cityUL = '';
@@ -87,28 +95,44 @@ const Header = (props) => {
   }
   else {
     cityUL = <CityUL />
+<<<<<<< HEAD
     cityList=<CityList/>
     signInHeader = <div className={classes.signInHeaderStyle}>
+=======
+    cityList = <CityList />
+    signInHeader = <div className="sign-area-mobile">
+>>>>>>> 2878e9a8f359b6444a2f26e79394a8e0b1982032
       <PersonIcon onClick={handleClick} style={{ marginTop: "2px" }} />
       <p
         onClick={handleClick}
-        className="login-sign-para" 
+        className="login-sign-para"
       >Sign In</p> |
+<<<<<<< HEAD
        <PersonIcon className="SignUpPerson"/>
+=======
+      <PersonIcon className="SignUpPerson" />
+>>>>>>> 2878e9a8f359b6444a2f26e79394a8e0b1982032
       <p className="login-sign-para">Sign Up</p>
     </div>
-
   }
 
   return (
     <>
       <Grid container>
         <AppBar position="fixed" className="m-3">
+<<<<<<< HEAD
           <Grid   className={classes.myHeader} >
             <Toolbar className="row">  
               <Grid item xs={12} sm={3}>
                 <a href="#" className="logo-btn">
                 <span className={classes.localContainer}>EZZ | Hotel</span>
+=======
+          <Grid >
+            <Toolbar className="row">
+              <Grid item xs={12} sm={3}>
+                <a href="#" className="logo-btn">
+                  <span>EZZ | Hotel</span>
+>>>>>>> 2878e9a8f359b6444a2f26e79394a8e0b1982032
                 </a>
                 <IconButton
                   edge="start"
@@ -129,12 +153,21 @@ const Header = (props) => {
               </Grid>
               {/* <Hidden xsDown> */}
               <Grid item sm={2} xs={12}>
+<<<<<<< HEAD
            <IconButton color="inherit">     
+=======
+                <IconButton color="inherit">
+>>>>>>> 2878e9a8f359b6444a2f26e79394a8e0b1982032
                   <span>
-                  {myProfile}
+                    {myProfile}
                   </span>
+<<<<<<< HEAD
                 <span>    
                   {signInHeader}
+=======
+                  <span>
+                    {signInHeader}
+>>>>>>> 2878e9a8f359b6444a2f26e79394a8e0b1982032
                   </span>
                 </IconButton>
               </Grid>
